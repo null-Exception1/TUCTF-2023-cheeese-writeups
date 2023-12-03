@@ -1,21 +1,21 @@
 # TUCTF-2023-cheeese-writeups
 
 # Bludgeon the Booty
-don't think you'll be needing this one
+don't think you'll be needing this one.
 just a basic brute force of rotations, they changed the challenge halfway by making it a 3 spin instead of a 4 spin lock
 
 # Cube 2023
 
 this one was pretty good. 
 
-so the basic idea is that we go through every single cell in the cube grid (which was 10x10x10 but it got changed to 6x6x6) and store the faces (labels) from inside every cell. you also need to get the back faces of every cell by doing a R and an L for every new cell you visit. it doesn't matter if you know where you start from because the entire grid is just an infinite treadmill, you can keep going 
+so the basic idea is that we go through every single cell in the cube grid (which was 10x10x10 but it got changed to 6x6x6) and store the faces (labels) from inside every cell. you also need to get the back faces of every cell by doing a R and an L for every new cell you visit. it doesn't matter if you know where you start from because the entire grid is just an infinite treadmill, you can keep going .
 
-then we find all the coprimes and loop through all the cells (you can pathfind to the coprime cells if you want to) and insert 'C' to check them all
+then we find all the coprimes and loop through all the cells (you can pathfind to the coprime cells if you want to) and insert 'C' to check them all.
 
 on how to find the coprimes - 
 we basically go to every cell, find the cells next to it (or if they're over the boundary on the opposite side). then we find the faces facing the original cell from the cells next to the cell, check if all of the faces are coprime with each other, and if yes then put the position in memory.
 
-i tried to half-ass it and didn't get the flag for a solid hour because i kept forgetting to recognize the flag with all my `recvuntil`'s and whatnot
+i tried to half-ass it and didn't get the flag for a solid hour because i kept forgetting to recognize the flag with all my `recvuntil`'s and whatnot.
 
 don't be me. become better.
 
@@ -25,9 +25,9 @@ if you go to dev console you can see there's requests being sent to the server a
 
 # Hidden Value
 
-this was not interesting, just a simple BOF challenge
+this was not interesting, just a simple BOF challenge.
 
-i recommend [this](https://ir0nstone.gitbook.io/notes/types/stack/shellcode) to learn how to do BOF
+i recommend [this](https://ir0nstone.gitbook.io/notes/types/stack/shellcode) to learn how to do BOF.
 
 # Custom ECB
 
@@ -49,13 +49,13 @@ def convert(msg):
 
 now the XOR (^) operator is a non-destructive operator. meaning - 
 
-if there are 2 numbers, a and b and XOR(a,b) = c then
+if there are 2 numbers, a and b and XOR(a,b) = c then -
 XOR(a,c) = b
 XOR(b,c) = a
 
 it's easily reversible.
 
-however i was unsure of what >> or << does to this reversibility, turns out if you just run this in a shell you'll figure out the answer easily
+however i was unsure of what >> or << does to this reversibility, turns out if you just run this in a shell you'll figure out the answer easily.
 
 ```
 >>> msg = 2390409
@@ -77,7 +77,7 @@ i dont know the explanation behind this to be very honest, i was just testing th
 
 the & (AND) operator also got me too, it's a destructive operator and the fact that it's acting on XOR made me think i'll have to brute force all the possible results just to somehow reverse the & operator.
 
-but nope, just tested it out
+but nope, just tested it out.
 
 ```
 >>> msg = 23904093924
@@ -112,12 +112,12 @@ def reverse_convert(msg):
     return msg
 ```
 
-hence this formed and i solved the chall. the flag was unrecognizable though, it was really hard to distinguish it till i just submitted to my instincts and entered it as the actual flag. the cipher text cropped the flag format, which made it harder to find it than it would've, but i guess that's because people could've just used shortcuts to find a decryption algorithm by comparing the flag format and the cipher text
+hence this formed and i solved the chall. the flag was unrecognizable though, it was really hard to distinguish it till i just submitted to my instincts and entered it as the actual flag. the cipher text cropped the flag format, which made it harder to find it than it would've, but i guess that's because people could've just used shortcuts to find a decryption algorithm by comparing the flag format and the cipher text.
 
 
 
 
-praying i don't fail in my exam tommorow
+praying i don't fail in my exam tommorow.
 
 peace.
 
