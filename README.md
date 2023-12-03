@@ -1,4 +1,4 @@
-# TUCTF-2023-cheeese-writeups
+# TUCTF-2023-cheeese-writeups - 73rd place
 
 # Bludgeon the Booty
 don't think you'll be needing this one.
