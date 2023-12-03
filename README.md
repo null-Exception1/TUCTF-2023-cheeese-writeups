@@ -1,5 +1,6 @@
 # TUCTF-2023-cheeese-writeups - 73rd place
-
+https://ctfd.tuctf.com/challenges
+https://tuctf.com/2023
 # Bludgeon the Booty
 don't think you'll be needing this one.
 just a basic brute force of rotations, they changed the challenge halfway by making it a 3 spin instead of a 4 spin lock
