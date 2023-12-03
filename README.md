@@ -114,6 +114,22 @@ def reverse_convert(msg):
 
 hence this formed and i solved the chall. the flag was unrecognizable though, it was really hard to distinguish it till i just submitted to my instincts and entered it as the actual flag. the cipher text cropped the flag format, which made it harder to find it than it would've, but i guess that's because people could've just used shortcuts to find a decryption algorithm by comparing the flag format and the cipher text.
 
+# Keyboard cipher
+
+convert hex to text, base64 to plaintext, 
+
+the cipher is just the letters surrounding the correct letter
+
+# Secret Agent
+
+mission 1 correct path was Attaya, Charity, Emell, Iyona, Kepliker, Osiros, Rhenora, Shariot
+![T8IjbWL](https://github.com/null-Exception1/TUCTF-2023-cheeese-writeups/assets/82306174/1bd1d4e0-5dfa-42b4-b711-8b7c31cb8bbd)
+
+mission 2, the characters were braille, after decoding they were spaced weird, then i checked all the recommended ciphers on cipher identifier on dcode.fr, got the flag after that.
+
+# Discord
+
+bruh check channel description of rules and header :skull:
 
 
 
