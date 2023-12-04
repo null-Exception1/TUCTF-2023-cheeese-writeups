@@ -105,7 +105,7 @@ def reverse_convert(msg):
     return msg
 ```
 
-hence this formed and i solved the chall. the flag was unrecognizable though, it was really hard to distinguish it till i just submitted to my instincts and entered it as the actual flag. the cipher text cropped the flag format, which made it harder to find it than it would've, but i guess that's because people could've just used shortcuts to find a decryption algorithm by comparing the flag format and the cipher text.
+hence this formed and i solved the chall. the flag was unrecognizable though, it was really hard to distinguish it till i just submitted to my instincts and entered it as the actual flag. the cipher text was cropped and had it's flag format removed, which made it harder to find it than it would've, but i guess that's because people could've just used shortcuts to find the decryption by comparing the flag format and the cipher text.
 
 # Keyboard cipher
 
