@@ -50,9 +50,7 @@ def convert(msg):
 
 now the XOR (^) operator is a non-destructive operator. meaning - 
 
-if there are 2 numbers, a and b and XOR(a,b) = c then -
-XOR(a,c) = b
-XOR(b,c) = a
+if there are 2 numbers, a and b and XOR(a,b) = c then, XOR(a,c) = b and XOR(b,c) = a
 
 it's easily reversible.
 
