@@ -64,12 +64,6 @@ however i was unsure of what >> or << does to this reversibility, turns out if y
 >>> msg = msg ^ msg >> 14
 >>> msg
 2390409
->>> msg = msg ^ msg >> 14
->>> msg
-2390296
->>> msg = msg ^ msg >> 14
->>> msg
-2390409
 ```
 
 i dont know the explanation behind this to be very honest, i was just testing things out till i was like "alright" and put this in.
