@@ -122,7 +122,7 @@ mission 2, the characters were braille, after decoding they were spaced weird, t
 
 # Discord
 
-bruh check channel description of rules and header :skull:
+bruh check channel description of #rules-and-info :skull:
 
 
 
